@@ -4,14 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        td{
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <ol>
-        <li>Apple</li>
-        <li>Orange</li>
-        <li>Banana</li>
-        <li>Mango</li>
-        <li>Grapes</li>
-    </ol>
+    <h1>Welcome to My Page!</h1>
+    <a href="image.html">click here to see buildings</a><br><br>
+    <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <label for="gender">Gender:</label>
+    <label for="male">Male</label>
+    <input type="radio" name="gender" value="male">
+    <label for="female">female</label>
+    <input type="radio" name="gender" value="female"><br><br>
+    <button type="submit">Submit</button>
+    </form><br><br>
+    <h2>Table</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th rowspan="2">Name</th>
+                <th colspan="2">Marks</th>
+            </tr>
+            <tr>
+                <th>Tamil</th>
+                <th>English</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sowmiya</td>
+                <td>90</td>
+                <td>95</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
