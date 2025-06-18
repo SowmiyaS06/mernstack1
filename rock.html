@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Rock paper Scissor</h1>
+    <p id="result"></p>
+    <button onclick="game('rock')">Rock🪨</button>
+    <button onclick="game('paper')">Paper📃</button>
+    <button onclick="game('scissor')">Scissor✂️</button>
+    <script>
+        function game(user){
+            const choices=['rock', 'paper', 'scissor'];
+            const computer = choices[Math.floor(Math.random() * choices.length)];//math.random generates some random numbers that should be within the length of choices and that should be a whole number 
+            let result='';
+            if(user === computer){
+                document.getElementById('result').innerText = `It's a tie! You both chose 😭🤡${user}.`;
+            }
+            else if ((user === 'rock' && computer === 'scissor') || 
+                    (user === 'paper' && computer === 'rock') || 
+                    (user === 'scissor' && computer === 'paper')) {
+                document.getElementById('result').innerText = `You win👍! ${user} beats ${computer}.`;
+            } else {
+                document.getElementById('result').innerText = `You lose👎😒! ${computer} beats ${user}.`;
+            }
+        }
+    </script>
+</body>
+</html>

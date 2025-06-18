@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-rows: 100px 100px 100px;
+            grid-template-columns: 100px 100px 100px 100px;
+            text-align: center;
+            justify-content: center;
+        }
+        .grid-container div{
+            border: 2px solid white;
+            text-align: center;
+            font-size: 24px;
+            border-radius: 10px;
+            justify-content: center;
+        }
+        .one{
+            grid-column-start: 1;
+            grid-column-end: 5;
+            background-color: lightcoral;
+            align-items: center ;
+        }
+        .two{
+            grid-column-start:1;
+            grid-column-end:3;
+            background-color: lightblue;
+        }
+        .four{
+            background-color: orange;
+        }
+        .five{
+            grid-column-start: 1;
+            grid-column-end:5;
+            background-color: lightgreen;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="one">header</div>
+        <div class="two">main</div>
+        <div class="three">empty</div>
+        <div class="four">sidebar</div>
+        <div class="five">footer</div>
+    </div>
+</body>
+</html>
