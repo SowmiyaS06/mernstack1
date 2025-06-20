@@ -1,3 +1,13 @@
+body {
+  text-align: center;
+  height:100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:auto;
+}
 /* #root {
   max-width: 1280px;
   margin: 0 auto;
