@@ -16,3 +16,5 @@ const Home = () => {
 }
 
 export default Home
+//this is component
+//default template will be displayed by typing rafce 

@@ -11,6 +11,7 @@ import './components/Navbar.css'
 import State from './Hooks/Stae.jsx'
 import Form from './Hooks/form.jsx'
 import Effect from './Hooks/Effect.jsx'
+import Reducer from './Hooks/Reducer.jsx'
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       <Route path='/state' element={<State/>} />
       <Route path='/form' element={<Form/>} />
       <Route path='/Effect' element={<Effect/>}/>
+      <Route path='/Reducer' element={<Reducer/>}/>
       <Route path='*' element={<h1>404 Not Found</h1>}/>
     </Routes>
     </>
