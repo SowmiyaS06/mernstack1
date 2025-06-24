@@ -115,3 +115,11 @@ async function fetchData(){
     }
 }
 fetchData();//calling the asynchronous function to fetch data from an API
+
+
+
+
+
+
+
+
