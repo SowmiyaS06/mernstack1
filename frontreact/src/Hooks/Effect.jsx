@@ -8,7 +8,7 @@ const Effect = ()=>{
 
 
     useEffect(()=>{
-        fetch('https://jsonplaceholder.typicode.com/users')
+        fetch('http://localhost:3000/get')
         .then((res)=>res.json())
         .then((data)=>{
             setUsers(data);
@@ -22,7 +22,7 @@ const Effect = ()=>{
             <h2>Users:</h2>
             <ul>
                 {users.map((user) => (
-                    <li key={user.id}>{user.name}</li>
+                    <li key={user._id}>{user.name}</li>
                 ))}
             </ul>
         </div>

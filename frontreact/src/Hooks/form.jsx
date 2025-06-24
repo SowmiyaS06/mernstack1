@@ -1,5 +1,5 @@
 import React from 'react'
-
+import axios from 'axios'
 
 const Form = () => {
   const [formData, setFormData] = React.useState({
@@ -15,8 +15,9 @@ const Form = () => {
       [name]: value
     }));
   }
-    const handleSubmit = (e) => {
+    const handleSubmit = async(e) => {
       e.preventDefault();
+      await axios.post('http://localhost:3000/postform', formData);
       console.log('Form submitted:', formData);
     }
     return (
