@@ -3,6 +3,8 @@ import cors from 'cors';
 //if in json type module is present we can use import and export or else we have to use require and module.exports
 import { connectDB } from './config/db.js'; // Import the connectDB function
 import mongoose from 'mongoose';
+import dotenv from 'dotenv';
+dotenv.config();
 const app = express();
 app.use(cors());
 
